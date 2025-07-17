@@ -79,18 +79,5 @@ This mini project was built to **sharpen my core Java web development skills** b
 
 ---
 
-## 💼 LinkedIn Caption
 
-🚀 I just completed a **Student Details System** — a full-stack mini web project using **JSP, Servlets, and MySQL**!  
-It includes:
-✅ Admin login  
-✅ File upload for student photos  
-✅ Live search by name or degree  
-✅ Dynamic student data display  
-
-I built this project to **sharpen my Java web development skills** and understand full-stack logic from request to database. Proud to have implemented real-world concepts like photo storage, dynamic rendering, and admin authentication.
-
-🔗 Demo & code on GitHub  
-
-#Java #JSP #Servlets #WebApp #ApacheTomcat #MySQL #MiniProject #NetBeans #StudentSystem #CSUndergrad #LearningByBuilding
 
