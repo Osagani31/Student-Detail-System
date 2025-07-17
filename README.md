@@ -52,7 +52,7 @@ This mini project was built to **sharpen my core Java web development skills** b
 
 ## 🎥 Demo Video
 
-📽️ *Still building... stay tuned!*  
+📽️  youtube link: https://youtu.be/C7VQDHV35Jk
 
 ---
 
