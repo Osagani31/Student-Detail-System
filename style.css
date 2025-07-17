@@ -1,0 +1,317 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 12, 2025, 11:50:11 AM
+    Author     : ASUSV
+*/
+
+/* === Professional Black & Purple Theme === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f 0%, #2a1456 100%);
+    color: #e0e0ff;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #c7a6ff;
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: 340px;
+    margin: 100px auto 0 auto;
+    background: rgba(34, 24, 56, 0.95);
+    padding: 32px 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(138, 43, 226, 0.18);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0 22px 0;
+    border-radius: 10px;
+    border: 1.5px solid #8250df;
+    background-color: #2a1a3a;
+    color: #e0e0ff;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border: 1.5px solid #c7a6ff;
+    outline: none;
+}
+
+input[type="submit"],
+button {
+    background: linear-gradient(90deg, #8250df 0%, #a259f7 100%);
+    color: #fff;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(130, 80, 223, 0.15);
+    transition: background 0.3s;
+}
+input[type="submit"]:hover,
+button:hover {
+    background: linear-gradient(90deg, #693bd1 0%, #8250df 100%);
+}
+
+.preview {
+    display: none;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #8250df;
+}
+
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: rgba(34, 24, 56, 0.95);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 18px rgba(130, 80, 223, 0.15);
+}
+th, td {
+    padding: 16px;
+    text-align: center;
+    color: #e0e0ff;
+    vertical-align: middle;
+    min-height: 60px;
+    height: 60px;
+    box-sizing: border-box;
+}
+th {
+    background: #3d256b;
+    font-size: 18px;
+    font-weight: 700;
+}
+tr {
+    height: 60px;
+}
+tr:nth-child(even) {
+    background: rgba(130, 80, 223, 0.07);
+}
+img {
+    width: 180px;
+    height: 120px;
+    border-radius: 12px;
+    border: 2px solid #8250df;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: #a259f7;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #fff;
+}
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* === Professional Fixed Header === */
+.student-system-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    background: rgba(34, 24, 56, 0.92);
+    box-shadow: 0 4px 24px 0 rgba(130, 80, 223, 0.15);
+    border-bottom: 2px solid #8250df;
+    backdrop-filter: blur(6px);
+    padding: 0;
+}
+.student-system-header .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    box-shadow: none;
+    padding: 0 32px;
+}
+.student-system-header h1 {
+    color: #c7a6ff;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin: 0;
+    font-size: 1.7rem;
+}
+.student-system-header .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.8rem;
+    color: #c7a6ff;
+    font-weight: bold;
+}
+.student-system-header .logo i {
+    font-size: 2.1rem;
+    color: #a259f7;
+}
+.student-system-header nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.student-system-header .nav-link {
+    color: #e0e0ff;
+    font-weight: 500;
+    font-size: 1.08rem;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+.student-system-header .nav-link:hover {
+    background: #8250df;
+    color: #fff;
+}
+@media (max-width: 700px) {
+    .student-system-header .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 12px;
+    }
+    .student-system-header nav ul {
+        gap: 10px;
+    }
+    .student-system-header h1 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+}
+
+/* Add top padding to body to prevent content being hidden under fixed header */
+body {
+    padding-top: 70px;
+}
+
+@media (max-width: 900px) {
+    table, th, td {
+        font-size: 0.95rem;
+    }
+    img {
+        width: 120px;
+        height: 80px;
+    }
+}
+
+/* === Login Form Styling === */
+.login-container {
+    max-width: 340px;
+    margin: 120px auto 0 auto;
+    background: rgba(34, 24, 56, 0.97);
+    padding: 36px 28px 28px 28px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(130, 80, 223, 0.18);
+    border: 1.5px solid #8250df;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-container h2 {
+    color: #c7a6ff;
+    margin-bottom: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.login-container label {
+    color: #e0e0ff;
+    font-size: 1rem;
+    margin-bottom: 6px;
+    align-self: flex-start;
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1.5px solid #8250df;
+    background-color: #2a1a3a;
+    color: #e0e0ff;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border: 1.5px solid #c7a6ff;
+    outline: none;
+}
+.login-container .login-btn {
+    background: linear-gradient(90deg, #8250df 0%, #a259f7 100%);
+    color: #fff;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(130, 80, 223, 0.15);
+    transition: background 0.3s;
+    margin-top: 8px;
+}
+.login-container .login-btn:hover {
+    background: linear-gradient(90deg, #693bd1 0%, #8250df 100%);
+}
+.login-container .error {
+    color: #ff6b6b;
+    background: rgba(255, 0, 0, 0.08);
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    width: 100%;
+    text-align: center;
+}
+.logout-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #8250df 0%, #a259f7 100%);
+    color: #fff;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(130, 80, 223, 0.15);
+    transition: background 0.3s;
+    margin: 24px auto 0 auto;
+}
+.logout-btn:hover {
+    background: linear-gradient(90deg, #693bd1 0%, #8250df 100%);
+}
